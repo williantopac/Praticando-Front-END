@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #F9F9F9;
+    --azul-do-botao: #167BF7;
+    --efeito-botao-azul:  #3e8ceb;
+    --cor-do-fundo: #00030C;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-do-fundo);
+    color: var(--branco-principal);
+}
+
+
+.principal {
+    background-image: url(imagens/Background.png); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo {
+   font-family: 'Inter', sans-serif;
+   font-weight: 700;
+   font-size: 28px;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    text-decoration: none;
+    color: var(--branco-principal);
+    background-color: var(--azul-do-botao);
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; 
+    display: block;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--efeito-botao-azul);
+    color: var(--cor-do-fundo);
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__disclaimer {
+    color: var(--cinza-secundario);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.secundario {
+    align-items: center;
+    text-align: left;
+    margin: 0 8em;
+}
+
+.descricao__titulo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 8px;
+    color: var(--branco-principal);
+}
+
+.descricao__paragrafo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;    
+    color: var(--cinza-secundario);
+    opacity: 80%;
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 32px;
+    font-weight: 700;
+    list-style: none;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape__imagem {
+    margin-bottom: 41px;
+    margin-top: 145px;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;  
+}
+
+.rodape__texto {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    color: #C0C0C0;
+    font-weight: 400;
+    margin-top: 24px;
+}
+
+.lista__link a:hover {
+    color: var(--azul-do-botao);
+}
+
+.lista__link a:active {
+    color: purple;
+}
